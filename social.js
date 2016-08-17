@@ -2,7 +2,7 @@ var cyclist = {
     name:"Anthony",
     age: 29,
     bikes: [
-        {
+            {
             model:"ReignX",
             brand:"Giant",
             uses: ["downhill", 
@@ -10,7 +10,7 @@ var cyclist = {
                    "park"], 
             isFavorite: false
         }, 
-        {
+            {
             model:"Trance",
             brand:"Giant", 
             uses: ["all mountain", 
@@ -18,7 +18,7 @@ var cyclist = {
                   "trail"], 
             isFavorite:false
         }, 
-        {
+            {
             model: "SV650",
             brand: "Suzuki", 
             uses: ["road", 
@@ -26,15 +26,14 @@ var cyclist = {
                    "speed"],
             isFavorite:false
         }, 
-        {
+            {
             model:"GS850",
             brand: "Suzuki", 
             uses: ["looks", 
                    "commuting", 
                    "project"], 
             isFavorite:true
-        }
-    ],
+        }],
     favoriteTrails:["Procupine Rim",
                     "Rush", 
                     "Sap Tree",
@@ -46,13 +45,11 @@ var cyclist = {
           "jersey",
           "shorts",
           "goggles"],
-    listBikes:function() {
-        for (i=0; i<bikes.length; i++){
-            console.log(bikes[i]);
+    readyToRide: function(){
+        if (cyclist.bikes != false){
+            console.log(cyclist.name+" is Ready to Ride");
         }
-  }
-  
-    
+    }
 }
 
-  
+    
